@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Listo</title>
-	</head>
+  <meta charset="UTF-8">
+  <title>Day 4</title>
+  <link type="text/css" rel="stylesheet" href="apps/styles/main.css"/>
+</head>
+
 <body>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="app/scripts/app.js"></script>
+  <div class="container">
+    <header>
+      <h1>To do</h1>
+    </header>
+
+    <section>
+      <form id="newTaskForm">
+        <label>New Item</label>
+        <input id="newItemInput" placeholder="new task">
+        <button id="saveNewItem">Save</button>
+        <button id="cancel">Cancel</button>
+      </form>
+    </section>
+
+    <div class='new-item-header'>
+      <button href="#" id="newListItem" style="">New</button>
+    </div>
+
+  </div>
+
+  <div id="newList"></div>
+
+  <div class="panel">
+    In Progress
+    <ul class="list-group" id="currentList"></ul>
+  </div>
+
+  <div class="panel">
+    Archived
+    <ul class="list-group" id="archivedList"></ul>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="apps/apps.js"></script>
+
 </body>
+
+
 </html>
